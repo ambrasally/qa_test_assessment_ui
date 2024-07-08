@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CucumberTestSuite" verbose="1">
+    <listeners>
+        <listener class-name="listeners.reportNameListener"/>
+    </listeners>
+    <test name="CucumberTest">
+        <parameter name="reportName" value="default-report.html"/>
+        <classes>
+            <class name="testRunners.TestRunner"/>
+        </classes>
+    </test>
+</suite>
